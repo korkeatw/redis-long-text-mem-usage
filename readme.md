@@ -113,5 +113,7 @@ mem_allocator:jemalloc-4.0.3
 
 ## Conclusion
 
-With long text, both command `set` and `hset` use memory equally and `bucket_size`
-does not affect in this case.
+~~With long text, both command `set` and `hset` use memory equally and `bucket_size`
+does not affect in this case.~~ `hset` use memory less than set but you have to set 
+`hash-max-ziplist-entries` and `hash-max-ziplist-value` value fit with your data to get
+benefir of compression feature.
