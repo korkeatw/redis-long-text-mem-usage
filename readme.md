@@ -1,8 +1,8 @@
 Redis Set and Hset memory usage
 ====
 
-> **Update** This experiment used Redis default config. It's not suite for this data, 
-zip (compression) feature don't be used in this case. I changed values of `hash-max-ziplist-entries` 
+> **Update** This experiment used Redis default config. It's not suit for this data, 
+zip (compression) feature doesn't be used in this case. I changed values of `hash-max-ziplist-entries` 
 and `hash-max-ziplist-value` then run script again. The `hset` command saves a lot of 
 memory as we expect but use more CPU. This is trade-off what you should concern when 
 use Redis in your stack.
